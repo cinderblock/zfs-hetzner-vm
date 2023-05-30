@@ -133,6 +133,8 @@ function check_prerequisites {
     apt install --yes dialog
   fi
 
+  mdadm --stop --scan
+
   apt update
 }
 
